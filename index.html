@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Modal Sign In</title>
+</head>
+
+<body>
+    <button id="obtn">
+        <i class="fa-solid fa-plus"></i>
+    </button>
+
+    <dialog id="modal">
+        <form id="form">
+            <div class="fheader">
+                <h1>Sign in to our plataform</h1>
+                
+                <button id="cbtn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <label for="email" class="input-field">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" id="email" placeholder="Type your email" autocomplete="off">
+            </label>
+
+            <label for="password" class="input-field">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" id="password" placeholder="Type your password" autocomplete="off">
+            </label>
+
+            <div class="hp-field">
+                <label for="remember" class="remember-field">
+                    <input type="checkbox" id="remember">
+                    Remember your password
+                </label>
+    
+                <a href="#">Forgot your account?</a>
+            </div>
+
+
+            <input type="submit" id="submit" name="submit" value="Sign in">
+            
+            <span>New here? <a href="#">Sign up</a></span>
+        </form>
+    </dialog>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

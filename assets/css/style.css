@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --bgcolor: #4c4ac2;
+    --dscolor: rgba(0, 0, 0, .2);
+    --lscolor: rgba(255, 255, 255, .2);
+
+    --drcolor: #000000;
+    --lrcolor: #ffffff;
+}
+
+*:not(dialog) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100%;
+    background: var(--bgcolor);
+}
+
+#modal {
+    z-index: 2;
+    border: none;
+    border-radius: 10px;
+    padding: 25px 35px;
+    box-shadow: 5px 5px 10px var(--dscolor);
+}
+
+#obtn {
+    z-index: 1;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    color: var(--drcolor);
+    background: var(--lrcolor);
+    box-shadow: 5px 5px 10px var(--dscolor);
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 15px;
+    width: 300px;
+}
+
+.fheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fheader h1 {
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+}
+
+.fheader h1:before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background: var(--bgcolor);
+    bottom: -5px;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--dscolor);
+    border-radius: 10px;
+    background: var(--lrcolor);
+    padding: 5px 10px;
+}
+
+.input-field i {
+    font-size: 14px;
+}
+
+.input-field input {
+    background: transparent;
+    outline: none;
+    padding: 5px 0;
+    border: none;
+    width: 100%;
+}
+
+.input-field:focus-within {
+    outline: 1px solid var(--bgcolor);
+}
+
+.remember-field {
+    font-size: 12px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.hp-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a,
+span {
+    font-size: 12px;
+}
+
+a {
+    color: var(--bgcolor);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#submit {
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid var(--dscolor);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--lrcolor);
+    background: var(--bgcolor);
+}
+
+#cbtn {
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+    border: none;
+    font-size: 14px;
+    color: var(--drcolor);
+    background: var(--lrcolor);
+}
+
+#obtn:hover,
+#cbtn:hover,
+#submit:hover {
+    filter: brightness(.9);
+}
